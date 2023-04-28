@@ -6,3 +6,20 @@
 }
 
 /* HEADER STYLES */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+.navbarTitles {
+  display: flex;
+}
+.navbarTitles > li > a {
+  margin-left: 46px;
+  font-size: 15.7px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #303134;
+  font-family: "Raleway";
+}
+/* End of header styles */
