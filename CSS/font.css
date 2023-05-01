@@ -9,3 +9,15 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Arial Th";
+  src: url("../Fonts/ArialTh.eot");
+  src: url("../Fonts/ArialTh.eot?#iefix") format("embedded-opentype"),
+    url("../Fonts/ArialTh.woff2") format("woff2"),
+    url("../Fonts/ArialTh.woff") format("woff"),
+    url("../Fonts/ArialTh.ttf") format("truetype"),
+    url("../Fonts/ArialTh.svg#ArialTh") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

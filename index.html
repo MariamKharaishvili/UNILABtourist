@@ -10,7 +10,8 @@
     <title>Tourist</title>
   </head>
   <body>
-    <header class="container">
+    <!-- header section goes here -->
+    <header class="container flex">
       <div>
         <img
           src="Images/header&Slider/TourismLogo.svg"
@@ -19,7 +20,7 @@
       </div>
       <div>
         <nav>
-          <ul class="navbarTitles">
+          <ul class="navbarTitles flex">
             <li><a href="#">home</a></li>
             <li><a href="#">about us</a></li>
             <li><a href="#">our services</a></li>
@@ -29,5 +30,41 @@
         </nav>
       </div>
     </header>
+    <!-- Slider  Section-->
+    <section class="sliderWrapper">
+      <div class="SliderGreenLayer"></div>
+      <div class="sliderButtonsAndInfo">
+        <button class="slideArrow flex" id="slideArrowPrev">
+          <img
+            src="Images/header&Slider/ArrowL.svg"
+            alt="Previous Button Icon"
+          />
+        </button>
+        <div class="flexCenter">
+          <div class="test">
+            <div class="priceScratch">
+              <p class="price">from $199/person</p>
+            </div>
+          </div>
+          <div class="countryInfo flexCenter">
+            <h2>discover greece</h2>
+            <h4>travel with unique experience</h4>
+          </div>
+        </div>
+
+        <button class="slideArrow flex" id="slideArrowNext">
+          <img src="Images/header&Slider/ArrowL.svg" alt="Next Button Icon" />
+        </button>
+      </div>
+      <ul class="slidesContainer flex" id="slidesContainer">
+        <li class="slide"></li>
+        <li class="slide"></li>
+        <li class="slide"></li>
+        <li class="slide"></li>
+        <li class="slide"></li>
+      </ul>
+    </section>
+    <!-- end of the slider section -->
+    <script src="JS/apps.js"></script>
   </body>
 </html>
