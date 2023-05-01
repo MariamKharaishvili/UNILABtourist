@@ -12,3 +12,12 @@ nextBtn.addEventListener("click", () => {
   const slideWidth = slide.clientWidth;
   slidesContainer.scrollLeft += slideWidth;
 });
+
+const video = document.getElementById("beachVideo");
+function toggleVideo() {
+  if (video.paused) {
+    video.play();
+  } else {
+    video.pause();
+  }
+}
