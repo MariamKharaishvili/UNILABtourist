@@ -210,7 +210,7 @@ header {
   margin-top: 23px;
   margin-bottom: 15px;
   font-weight: bold;
-  font-family: "Arial Th";
+  /* font-family: "Arial Th"; */
   color: #1a1a1b;
 }
 .feedbackNumbersWrapper > div > p {
@@ -229,6 +229,7 @@ header {
 }
 
 /* end of the feedback numbers styles */
+/* popular tour section start  */
 .popularTour > h5 {
   font-size: 16px;
   line-height: 37px;
@@ -247,12 +248,12 @@ header {
 .tourCardWrapper {
   justify-content: center;
   margin-top: 67px;
-  margin-bottom: 100px;
+  margin-bottom: 72px;
   gap: 28px;
 }
 .tourCard {
+  position: relative;
   background-color: #ffffff;
-  /* margin-left: 28px; */
   height: 358px;
   flex-direction: column;
   align-items: center;
@@ -263,4 +264,38 @@ header {
   align-items: center;
 }
 .tourPrice {
+  font-size: 14px;
+  line-height: 37px;
+  font-weight: 500;
+  font-family: "Raleway";
+  color: #1a1a1b;
 }
+.tourName {
+  font-size: 18px;
+  line-height: 37px;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-family: "Raleway";
+  color: #4b54fa;
+}
+.duration {
+  font-size: 14px;
+  line-height: 37px;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-family: "Raleway";
+  color: #1a1a1b;
+}
+.tourStyle {
+  position: absolute;
+  height: 25px;
+  padding: 4px 9px;
+  background-color: #fed701;
+  font-size: 14px;
+  color: #1a1a1b;
+  font-family: "Raleway";
+  text-transform: capitalize;
+  top: 10px;
+  left: 10px;
+}
+/* popular section ends here  */
