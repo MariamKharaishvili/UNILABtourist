@@ -4,6 +4,9 @@
   width: 100%;
   margin: 0 auto;
 }
+body {
+  font-family: "Raleway";
+}
 .flex {
   display: flex;
 }
@@ -299,3 +302,59 @@ header {
   left: 10px;
 }
 /* popular section ends here  */
+
+/* discount and email section  */
+.discountBg {
+  background-image: url(../Images/discount&email/discountBgImg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+}
+.discountBgLayer {
+  background-image: url(../Images/discount&email/discountBgImgLayer.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+}
+.discountTextWrapper {
+  text-align: center;
+}
+.discountTextWrapper h3 {
+  font-size: 34px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.discountTextWrapper h5 {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 60px;
+}
+#email {
+  width: 395px;
+  height: 50px;
+  border-color: #ffffff;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 25px;
+  background-color: transparent;
+}
+#email::placeholder {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 500;
+  padding-left: 30px;
+}
+.subscribeButton {
+  border-radius: 25px;
+  border: 2px solid #ffffff;
+  padding: 15px 33px;
+  background-color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #08aeea;
+  margin-left: 22px;
+}
+/* end of the discount and email section  */
