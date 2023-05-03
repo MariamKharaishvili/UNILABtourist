@@ -389,3 +389,29 @@ header {
 .quoteMark {
   margin: 35px 0 51px 0;
 }
+/* end of the travelers feedback section  styles */
+/* booking section styles */
+.bookingWrapper {
+  background-image: url(../Images/travelers&booking/bookingBgImg.png);
+  height: 505px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 1500px;
+}
+.bookingText span {
+  font-size: 36px;
+  margin-top: 312px;
+  margin-bottom: 49px;
+  color: #fefeff;
+}
+.bookingText button {
+  border-radius: 25px;
+  font-size: 16px;
+  color: #fefeff;
+  text-transform: uppercase;
+  border: none;
+  background: #08aeea;
+  background: linear-gradient(-1deg, #08aeea 0%, #2af598 100%);
+  padding: 16px 40px 14px 39px;
+  margin-bottom: 51px;
+}
