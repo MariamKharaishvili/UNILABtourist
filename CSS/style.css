@@ -233,14 +233,16 @@ header {
 
 /* end of the feedback numbers styles */
 /* popular tour section start  */
-.popularTour > h5 {
+.popularTour > h5,
+.travelersTextWrapper > h5 {
   font-size: 16px;
   line-height: 37px;
   text-transform: uppercase;
   font-family: "Raleway";
   color: #8d8d8d;
 }
-.popularTour > p {
+.popularTour > p,
+.travelersTextWrapper > p {
   font-size: 26px;
   line-height: 37px;
   margin-bottom: 7px;
@@ -310,6 +312,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 350px;
+  margin-bottom: 67px;
 }
 .discountBgLayer {
   background-image: url(../Images/discount&email/discountBgImgLayer.png);
@@ -358,3 +361,31 @@ header {
   margin-left: 22px;
 }
 /* end of the discount and email section  */
+
+/* travelers feedback section styles */
+.travelerCard {
+  padding-top: 54px;
+  background-color: #f4f4f4;
+}
+
+.travelersCardsWrapper {
+  margin-top: 82px;
+  gap: 30px;
+}
+.travelerName {
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #4b54fa;
+  margin: 18px auto 37px auto;
+}
+.travelersText {
+  font-size: 16px;
+  padding: 0 35px;
+  text-transform: capitalize;
+  text-align: center;
+  line-height: 22px;
+  color: #1a1a1b;
+}
+.quoteMark {
+  margin: 35px 0 51px 0;
+}
