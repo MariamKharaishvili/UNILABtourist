@@ -234,7 +234,8 @@ header {
 /* end of the feedback numbers styles */
 /* popular tour section start  */
 .popularTour > h5,
-.travelersTextWrapper > h5 {
+.travelersTextWrapper > h5,
+.destinationTextWrapper > h5 {
   font-size: 16px;
   line-height: 37px;
   text-transform: uppercase;
@@ -242,7 +243,8 @@ header {
   color: #8d8d8d;
 }
 .popularTour > p,
-.travelersTextWrapper > p {
+.travelersTextWrapper > p,
+.destinationTextWrapper > p {
   font-size: 26px;
   line-height: 37px;
   margin-bottom: 7px;
@@ -396,7 +398,7 @@ header {
   height: 505px;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 1500px;
+  margin-bottom: 69px;
 }
 .bookingText span {
   font-size: 36px;
@@ -414,4 +416,41 @@ header {
   background: linear-gradient(-1deg, #08aeea 0%, #2af598 100%);
   padding: 16px 40px 14px 39px;
   margin-bottom: 51px;
+}
+/* end of the booking section styles */
+/* destination styles */
+.card {
+  background-image: url(../Images/destination/destinationThailand2.png);
+  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 200px;
+}
+.destinationPriceWrapper {
+  position: absolute;
+  left: 18px;
+  bottom: 9px;
+}
+.destinationCountry {
+  font-size: 30px;
+  color: #fefeff;
+  text-transform: capitalize;
+}
+.destinationRange {
+  font-size: 14px;
+  color: #fefeff;
+}
+.arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  filter: drop-shadow(0px 0px 10px rgba(101, 101, 101, 0.2));
+  background: linear-gradient(-5deg, #08aeea 0%, #2af598 100%);
+}
+.destinationInfoWrapper {
+  flex-direction: column;
+}
+.cardsWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
