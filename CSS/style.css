@@ -228,11 +228,13 @@ header {
   width: 100%;
   height: 1px;
   background-color: #ebebeb;
-  margin-bottom: 66px;
 }
 
 /* end of the feedback numbers styles */
 /* popular tour section start  */
+.popularTourWrapper {
+  margin-top: 66px;
+}
 .popularTour > h5,
 .travelersTextWrapper > h5,
 .destinationTextWrapper > h5 {
@@ -423,15 +425,27 @@ header {
   background-image: url(../Images/destination/destinationThailand2.png);
   background-repeat: no-repeat;
   position: relative;
-  margin-bottom: 200px;
+  margin: 80px 0 80px 0;
+  filter: drop-shadow(0px 0px 10px rgba(101, 101, 101, 0.2));
+}
+.card:nth-child(2) {
+  background-image: url(../Images/destination/italy.png);
+}
+.card:nth-child(3) {
+  background-image: url(../Images/destination/indonesia.png);
 }
 .destinationPriceWrapper {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 88%;
   left: 18px;
-  bottom: 9px;
+  bottom: 13px;
 }
 .destinationCountry {
   font-size: 30px;
+  margin-bottom: 5px;
   color: #fefeff;
   text-transform: capitalize;
 }
@@ -453,4 +467,76 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+/* end of the destination styles */
+/* map and footer section styles */
+.map > iframe {
+  width: 100%;
+  height: 435px;
+}
+footer {
+  background-color: #141418;
+}
+.footerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.supportAdress {
+  width: 53%;
+  justify-content: space-between;
+  margin-top: 54px;
+}
+.quickLinks > h5,
+.support > h5,
+.address > h5 {
+  font-size: 19px;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #ffffff;
+}
+.quickLinks > ul > li > a,
+.support > ul > li > a,
+.address > ul > li > a {
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #dcdbdb;
+}
+.quickLinks > ul > li,
+.support > ul > li,
+.address > ul > li {
+  margin-bottom: 28px;
+}
+.footerSubscribe > h5 {
+  font-size: 16px;
+  margin-bottom: 14px;
+  color: #ffffff;
+}
+#footerEmail {
+  width: 343px;
+  padding: 14px 0 13px 16px;
+  background-color: #f0f1f3;
+  border-radius: 3px;
+  font-size: 16px;
+  color: #353030;
+  border: none;
+}
+.submitFooter {
+  width: 58px;
+  height: 48px;
+  border: none;
+  filter: drop-shadow(0px 0px 10px rgba(101, 101, 101, 0.2));
+  background: linear-gradient(-5deg, #08aeea 0%, #2af598 100%);
+}
+.submitFooter {
+  margin-left: -2px;
+}
+.copyright {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #dcdbdb;
+  padding: 22px 0;
 }
