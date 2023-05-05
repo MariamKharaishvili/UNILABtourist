@@ -19,6 +19,9 @@ body {
   align-items: center;
   flex-direction: column;
 }
+button {
+  cursor: pointer;
+}
 /* HEADER STYLES */
 header {
   justify-content: space-between;
@@ -523,15 +526,20 @@ footer {
   color: #353030;
   border: none;
 }
+#footerEmail:focus {
+  outline: none;
+}
 .submitFooter {
   width: 58px;
   height: 48px;
+  margin-left: -2px;
   border: none;
   filter: drop-shadow(0px 0px 10px rgba(101, 101, 101, 0.2));
   background: linear-gradient(-5deg, #08aeea 0%, #2af598 100%);
 }
-.submitFooter {
-  margin-left: -2px;
+.submitFooter > img {
+  width: 30px;
+  height: 30px;
 }
 .copyright {
   font-size: 20px;
