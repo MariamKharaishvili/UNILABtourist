@@ -5,5 +5,31 @@
   }
   .cardsWrapper {
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+    margin-bottom: 40px;
+  }
+  .card {
+    margin: unset;
+  }
+  .serviceCard {
+    height: unset;
+  }
+  .hotServiceCardText {
+    display: none;
+  }
+  .hotServiceWrapper {
+    align-items: center;
+  }
+  .hotServiceTitle {
+    margin: 10px auto 22px auto;
+  }
+  .bookingWrapper {
+    background-size: unset;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
   }
 }
