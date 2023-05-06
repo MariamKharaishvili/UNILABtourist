@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="CSS/reset.css" />
     <link rel="stylesheet" href="CSS/font.css" />
     <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <title>Tourist</title>
   </head>
   <body>
@@ -21,7 +22,7 @@
       <div>
         <nav>
           <ul class="navbarTitles flex">
-            <li><a href="#">home</a></li>
+            <li class="active"><a href="#">home</a></li>
             <li><a href="#">about us</a></li>
             <li><a href="#">our services</a></li>
             <li><a href="#">tour package</a></li>
@@ -103,16 +104,16 @@
           <h5>discover</h5>
           <p>watch our video tour</p>
           <img src="Images/discover&video/videoTextShape.png" alt="shape img" />
-          <div>
+          <div class="videoWrapper">
             <video id="beachVideo">
               <source
                 src="Images/discover&video/Rick Astley - Never Gonna Give You Up (Official Music Video).mp4"
                 type="video/mp4"
               />
             </video>
-            <button onclick="toggleVideo()">
+            <button class="playBtn" onclick="toggleVideo()">
               <img
-                src="Images/discover&video/playButton.png"
+                src="Images/discover&video/playButton.svg"
                 alt="playButton"
               />
             </button>

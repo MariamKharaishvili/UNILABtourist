@@ -23,6 +23,9 @@ button {
   cursor: pointer;
 }
 /* HEADER STYLES */
+.active {
+  font-weight: bolder;
+}
 header {
   justify-content: space-between;
   padding: 25px 0;
@@ -189,7 +192,13 @@ header {
 .serviceCard {
   width: 270px;
   height: 327px;
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
 }
+.serviceCard:hover {
+  transform: scale(1.1);
+}
+
 .serviceCard > img {
   width: 100%;
   height: 181px;
@@ -216,6 +225,7 @@ header {
 .modal {
   display: none;
   position: fixed;
+  align-items: center;
   z-index: 1;
   padding-top: 100px;
   left: 0;
@@ -322,6 +332,18 @@ header {
 #beachVideo {
   width: 660px;
   height: 310px;
+  margin-top: 35px;
+}
+.videoWrapper {
+  position: relative;
+}
+.playBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: transparent;
+  border: none;
 }
 /* end of the beach video styles  */
 
@@ -396,6 +418,10 @@ header {
   flex-direction: column;
   align-items: center;
   filter: drop-shadow(0px 0px 6px rgba(101, 101, 101, 0.2));
+  transition: transform 0.3s ease-out;
+}
+.tourCard:hover {
+  transform: scale(1.1);
 }
 .tourCardTextWrapper {
   flex-direction: column;
@@ -554,9 +580,18 @@ header {
   background-image: url(../Images/destination/destinationThailand2.png);
   background-repeat: no-repeat;
   position: relative;
+  height: 425px;
   margin: 80px 0 80px 0;
   filter: drop-shadow(0px 0px 10px rgba(101, 101, 101, 0.2));
+  transition: transform 0.3s ease-out;
 }
+.card:hover {
+  transform: scale(1.1);
+}
+.card > img:hover {
+  transition: transform 0.3s ease-out;
+}
+
 .card:nth-child(2) {
   background-image: url(../Images/destination/italy.png);
 }
@@ -586,6 +621,7 @@ header {
   width: 40px;
   height: 40px;
   border-radius: 30px;
+  cursor: pointer;
   filter: drop-shadow(0px 0px 10px rgba(101, 101, 101, 0.2));
   background: linear-gradient(-5deg, #08aeea 0%, #2af598 100%);
 }
@@ -673,4 +709,7 @@ footer {
   text-transform: capitalize;
   color: #dcdbdb;
   padding: 22px 0;
+}
+.supportAdress > div > ul > li > a:hover {
+  font-weight: bolder;
 }
