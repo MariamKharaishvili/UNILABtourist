@@ -104,3 +104,11 @@ myArray.forEach((object) => {
 
   myArrayElement.appendChild(card);
 });
+
+const navbarBurger = document.querySelector(".navbar-burger");
+const navbarMenu = document.querySelector(".navbar-menu");
+
+navbarBurger.addEventListener("click", () => {
+  navbarBurger.classList.toggle("activeNav");
+  navbarMenu.classList.toggle("activeNav");
+});
