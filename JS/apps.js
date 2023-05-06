@@ -22,21 +22,6 @@ function toggleVideo() {
   }
 }
 
-// const myArray = [
-//   {
-//     name: "flight booking",
-//     image:
-//       "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg",
-//     city: "New York",
-//   },
-//   { name: "Object 2", age: 25, city: "Los Angeles" },
-//   { name: "Object 3", age: 30, city: "Chicago" },
-//   { name: "Object 4", age: 35, city: "Houston" },
-//   { name: "Object 5", age: 40, city: "Miami" },
-//   { name: "Object 6", age: 45, city: "Seattle" },
-// ];
-// console.log(myArray);
-
 const myArray = [
   {
     name: "flight booking",
@@ -76,30 +61,24 @@ myArray.forEach((object) => {
   const card = document.createElement("div");
   card.classList.add("serviceCard");
   card.addEventListener("click", () => {
-    // Get the modal
     const modal = document.getElementById("myModal");
-    const modalImage = document.getElementById("modal-image");
+    const modalImage = document.getElementById("modalImage");
     modalImage.src = object.image;
-    const modalContent = document.getElementById("modal-content");
+    const modalContent = document.getElementById("modalContent");
     modalContent.innerHTML = `<h2>${object.name}</h2><p>${object.text}</p>`;
 
-    // Get the button that opens the modal
     const btn = document.getElementById("myBtn");
 
-    // Get the <span> element that closes the modal
     const span = document.getElementsByClassName("close")[0];
 
-    // When the user clicks the button, open the modal
     card.onclick = function () {
-      modal.style.display = "block";
+      modal.style.display = "flex";
     };
 
-    // When the user clicks on <span> (x), close the modal
     span.onclick = function () {
       modal.style.display = "none";
     };
 
-    // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (event) {
       if (event.target == modal) {
         modal.style.display = "none";
