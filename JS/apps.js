@@ -36,47 +36,36 @@ function toggleVideo() {
 //   { name: "Object 6", age: 45, city: "Seattle" },
 // ];
 // console.log(myArray);
-const modalTextArray = [
-  {
-    modalName: "miigebt fasdaklebas",
-    modalText: "testuka",
-  },
-];
+
 const myArray = [
   {
     name: "flight booking",
-    image:
-      "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg",
+    image: "./images/hotServices/flightBooking.png",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem.",
   },
   {
     name: "hotel & resort booking",
-    image:
-      "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg",
+    image: "./images/hotServices/resortBooking.png",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem.",
   },
   {
     name: "family trip planner",
-    image:
-      "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg",
-    text: "CLorem I industry. Lorem.",
+    image: "./images/hotServices/familyTrip.png",
+    text: "CLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem.",
   },
   {
     name: "cruise tour",
-    image:
-      "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg",
+    image: "./images/hotServices/cruiseTour.png",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem.",
   },
   {
     name: "fire camp",
-    image:
-      "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg",
+    image: "./images/hotServices/fireCamp.png",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem.",
   },
   {
     name: "corporate holidays",
-    image:
-      "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg",
+    image: "./images/hotServices/corporateHolidays.png",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem.",
   },
 ];
@@ -89,10 +78,10 @@ myArray.forEach((object) => {
   card.addEventListener("click", () => {
     // Get the modal
     const modal = document.getElementById("myModal");
-    // const modalImage = document.getElementById("modal-image");
-    // modalImage.src = object.image;
+    const modalImage = document.getElementById("modal-image");
+    modalImage.src = object.image;
     const modalContent = document.getElementById("modal-content");
-    modalContent.innerHTML = `<h2>${object.modalName}</h2><p>${object.modalText}</p>`;
+    modalContent.innerHTML = `<h2>${object.name}</h2><p>${object.text}</p>`;
 
     // Get the button that opens the modal
     const btn = document.getElementById("myBtn");
