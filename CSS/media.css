@@ -3,6 +3,38 @@
     padding: 25px 5%;
     max-width: 1024px;
   }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .countryInfo h2 {
+    font-size: 60px;
+    margin-top: unset;
+  }
+  .hotServiceWrapper {
+    flex-direction: column;
+  }
+  .hotServiceCardsWrapper {
+    margin-top: 40px;
+    margin-left: unset;
+    justify-content: space-evenly;
+  }
+  .hotServiceInfo {
+    align-items: center;
+  }
+  .hotServiceText {
+    width: unset;
+    text-align: center;
+  }
+  .tourCardWrapper {
+    flex-wrap: wrap;
+  }
+  #footerEmail,
+  .supportAdress {
+    width: unset;
+    gap: 15px;
+  }
   .cardsWrapper {
     flex-wrap: wrap;
     justify-content: center;
@@ -23,9 +55,16 @@
   }
   .hotServiceTitle {
     margin: 10px auto 22px auto;
+    text-align: center;
   }
   .bookingWrapper {
     background-size: unset;
+  }
+  .slidesContainer {
+    height: 500px;
+  }
+  .travelersCardsWrapper {
+    flex-wrap: wrap;
   }
 }
 
@@ -34,40 +73,7 @@
     max-width: 768px;
     padding: 25px 5%;
   }
-  .hotServiceWrapper {
-    flex-direction: column;
-  }
-  .hotServiceCardsWrapper {
-    margin-top: 40px;
-    margin-left: unset;
-    justify-content: space-evenly;
-  }
-  .hotServiceInfo {
-    align-items: center;
-  }
-  .hotServiceText {
-    width: unset;
-    text-align: center;
-  }
-  .tourCardWrapper {
-    flex-wrap: wrap;
-  }
-  .hotServiceTitle {
-    text-align: center;
-  }
-  .countryInfo h2 {
-    font-size: 60px;
-    margin-top: unset;
-  }
-  .travelersCardsWrapper {
-    margin-top: unset;
-  }
-  #footerEmail,
-  .supportAdress {
-    width: unset;
-    gap: 18px;
-  }
-  /* .navbar-menu {
+  .navBarFull {
     display: none;
   }
 
@@ -75,7 +81,22 @@
     display: block;
     cursor: pointer;
   }
+  .navbar {
+    display: flex;
+  }
+  .countryInfo h4 {
+    text-align: center;
+  }
+  .countryInfo h2 {
+    font-size: 30px;
+  }
 
+  #beachVideo {
+    width: 100%;
+  }
+  .navbar-menu {
+    display: none;
+  }
   .navbar-burger span {
     display: block;
     height: 2px;
@@ -95,5 +116,40 @@
 
   .navbar-burger.activeNav span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
-  } */
+  }
+
+  #email {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .discountTextWrapper h3 {
+    font-size: 25px;
+  }
+  .subscribeButton {
+    font-size: unset;
+    padding: 10px 25px;
+  }
+  .bookingText span {
+    font-size: 25px;
+    margin-top: unset;
+  }
+  .destinationTextWrapper {
+    text-align: center;
+  }
+  .feedbackNumbersWrapper {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .supportAdress {
+    flex-direction: column;
+
+    margin: 0 auto;
+  }
+  .footerSubscribe {
+    margin: 0 auto;
+  }
+  .footerWrapper {
+    text-align: center;
+    flex-direction: column;
+  }
 }

@@ -23,7 +23,7 @@ button {
   cursor: pointer;
 }
 .navbar {
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
   background-color: #f7f7f7;
@@ -573,15 +573,18 @@ header {
 /* end of the travelers feedback section  styles */
 /* booking section styles */
 .bookingWrapper {
-  background-image: url(../Images/travelers&booking/bookingBgImg.png);
-  height: 505px;
+  background-image: url(../Images/travelers&booking/bookingBgImg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 69px;
+  background-position: bottom;
+}
+.bookingText {
+  height: 500px;
+  justify-content: end;
 }
 .bookingText span {
   font-size: 36px;
-  margin-top: 312px;
   margin-bottom: 49px;
   color: #fefeff;
 }
@@ -654,6 +657,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 /* end of the destination styles */
 /* map and footer section styles */
