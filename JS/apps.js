@@ -25,32 +25,32 @@ function toggleVideo() {
 const myArray = [
   {
     name: "flight booking",
-    image: "../Images/hotServices/flightBooking.png",
+    image: "Images/hotServices/flightBooking.png",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem.",
   },
   {
     name: "hotel & resort booking",
-    image: "../Images/hotServices/resortBooking.png",
+    image: "Images/hotServices/resortBooking.png",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem.",
   },
   {
     name: "family trip planner",
-    image: "../Images/hotServices/familyTrip.png",
+    image: "Images/hotServices/familyTrip.png",
     text: "CLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem.",
   },
   {
     name: "cruise tour",
-    image: "../Images/hotServices/cruiseTour.png",
+    image: "Images/hotServices/cruiseTour.png",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem.",
   },
   {
     name: "fire camp",
-    image: "../Images/hotServices/fireCamp.png",
+    image: "Images/hotServices/fireCamp.png",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem.",
   },
   {
     name: "corporate holidays",
-    image: "../Iimages/hotServices/corporateHolidays.png",
+    image: "Iimages/hotServices/corporateHolidays.png",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem.",
   },
 ];
