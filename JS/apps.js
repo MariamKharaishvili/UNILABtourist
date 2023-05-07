@@ -146,3 +146,25 @@ burgerMenu.addEventListener("click", function () {
   this.classList.toggle("close");
   overlay.classList.toggle("overlay");
 });
+///
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+window.addEventListener("scroll", () => {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+});
+
+scrollToTopBtn.addEventListener("click", () => {
+  const scrollToTop = () => {
+    const scrollTop =
+      document.documentElement.scrollTop || document.body.scrollTop;
+    if (scrollTop > 0) {
+      window.requestAnimationFrame(scrollToTop);
+      window.scrollTo(0, scrollTop - scrollTop / 8);
+    }
+  };
+  scrollToTop();
+});

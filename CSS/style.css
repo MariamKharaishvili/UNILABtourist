@@ -37,6 +37,24 @@ button {
   background-color: #333;
   border-radius: 5px;
 }
+/* scroll button  */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  padding: 5px;
+  right: 20px;
+  display: none;
+  background: linear-gradient(-1deg, #08aeea 0%, #2af598 100%);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #555;
+}
+/* scroll button end/'' */
 
 /* HEADER STYLES */
 #menu {
