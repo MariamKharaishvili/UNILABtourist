@@ -50,7 +50,7 @@ const myArray = [
   },
   {
     name: "corporate holidays",
-    image: "Iimages/hotServices/corporateHolidays.png",
+    image: "Images/hotServices/corporateHolidays.png",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem.",
   },
 ];
