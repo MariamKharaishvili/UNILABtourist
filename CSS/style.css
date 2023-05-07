@@ -268,7 +268,7 @@ header {
 }
 
 #modalContent {
-  position: relative;
+  /* position: relative; */
   margin: auto;
   padding-left: 10%;
   width: 80%;
@@ -312,11 +312,11 @@ header {
   text-transform: uppercase;
   color: #1a1a1b;
 }
-.test {
+.hotServicesModal {
   display: flex;
   flex-direction: row-reverse;
   margin: 0 auto;
-  height: 400px;
+  height: 250px;
   background-color: #b39090;
 }
 #modalImage {

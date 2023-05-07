@@ -71,6 +71,7 @@
 @media screen and (max-width: 768px) {
   .container {
     max-width: 768px;
+    width: 100%;
     padding: 25px 5%;
   }
   .navBarFull {
@@ -151,5 +152,29 @@
   .footerWrapper {
     text-align: center;
     flex-direction: column;
+  }
+  #modalContent {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #modalContent > p {
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: unset;
+    width: unset;
+  }
+  #modalContent > h2 {
+    font-size: 18px;
+  }
+  .hotServicesModal {
+    margin: unset;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #modalImage {
+    margin-bottom: 10px;
   }
 }
