@@ -1,3 +1,4 @@
+// slider images and button
 const slidesContainer = document.getElementById("slidesContainer");
 const slide = document.querySelector(".slide");
 const prevBtn = document.getElementById("slideArrowPrev");
@@ -12,7 +13,9 @@ nextBtn.addEventListener("click", () => {
   const slideWidth = slide.clientWidth;
   slidesContainer.scrollLeft += slideWidth;
 });
+// slider ends here
 
+// video play button code
 const video = document.getElementById("beachVideo");
 function toggleVideo() {
   if (video.paused) {
@@ -21,7 +24,9 @@ function toggleVideo() {
     video.pause();
   }
 }
+// video play button code
 
+// hot services modal
 const myArray = [
   {
     name: "flight booking",
@@ -105,14 +110,9 @@ myArray.forEach((object) => {
   myArrayElement.appendChild(card);
 });
 
-const navbarBurger = document.querySelector(".navbar-burger");
-const navbarMenu = document.querySelector(".navbar-menu");
+// hot services modal and cards ends here
 
-navbarBurger.addEventListener("click", () => {
-  navbarBurger.classList.toggle("activeNav");
-  navbarMenu.classList.toggle("activeNav");
-});
-
+// this code makes numbers count from zero
 function animateValue(id, start, end, duration) {
   var obj = document.getElementById(id);
   var range = end - start;
@@ -132,18 +132,17 @@ var happyTravelers = document.getElementById("happy-travelers");
 var satisfiedTours = document.getElementById("satisfied-tours");
 var destination = document.getElementById("destination");
 var hotelsResorts = document.getElementById("hotels-resorts");
-
 animateValue("happy-travelers", 0, 120, 2000);
 animateValue("satisfied-tours", 0, 2594, 2000);
 animateValue("destination", 0, 854, 2000);
 animateValue("hotels-resorts", 0, 978, 2000);
 
-const form = document.querySelector("form");
-const emailInput = document.querySelector("#email");
+//
+var burgerMenu = document.getElementById("burgerMenu");
 
-form.addEventListener("submit", (event) => {
-  if (!emailInput.checkValidity()) {
-    event.preventDefault();
-    alert("Please enter a valid email address.");
-  }
+var overlay = document.getElementById("menu");
+
+burgerMenu.addEventListener("click", function () {
+  this.classList.toggle("close");
+  overlay.classList.toggle("overlay");
 });

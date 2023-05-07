@@ -177,4 +177,103 @@
   #modalImage {
     margin-bottom: 10px;
   }
+  /* burger menu styles  */
+  #burgerMenu {
+    cursor: pointer;
+    height: 27px;
+    width: 27px;
+    margin: 10px 0 150px 0;
+    overflow: visible;
+    position: relative;
+    z-index: 2;
+
+    /* // THE LINES */
+    .span,
+    .span:before,
+    .span:after {
+      background-color: black;
+      display: block;
+      height: 3px;
+      opacity: 1;
+      position: absolute;
+      transition: 0.3s ease-in-out;
+    }
+
+    .span:before,
+    .span:after {
+      content: "";
+    }
+    .span:before {
+      left: 0px;
+      top: -10px;
+      width: 27px;
+    }
+
+    .span {
+      right: 0px;
+      top: 13px;
+      width: 27px;
+    }
+
+    .span:after {
+      left: 0px;
+      top: 10px;
+      width: 27px;
+    }
+
+    &.close {
+      .span:before {
+        top: 0px;
+        transform: rotate(90deg);
+        width: 27px;
+      }
+
+      .span {
+        transform: rotate(-45deg);
+        top: 13px;
+        width: 27px;
+      }
+
+      .span:after {
+        top: 0px;
+        left: 0;
+        transform: rotate(90deg);
+        opacity: 0;
+        width: 0;
+      }
+    }
+  }
+
+  #menu {
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    padding-top: 20px;
+    transition: all 0.3s ease-in-out;
+
+    &.overlay {
+      justify-content: center;
+      display: flex;
+      visibility: visible;
+      opacity: 1;
+      padding-top: 150px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+  }
+  #menu > ul {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  #menu > ul > li > a {
+    color: #ffff;
+  }
+  /* burger menu styles end  */
 }

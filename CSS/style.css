@@ -22,38 +22,27 @@ body {
 button {
   cursor: pointer;
 }
-.navbar {
-  display: none;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f7f7f7;
-  padding: 1rem;
-}
-
-.navbar-menu {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.navbar-item {
-  padding: 0.5rem;
-}
-
-.navbar-burger {
+.burgerNav {
   display: none;
 }
 
-input:invalid {
-  border-color: red;
+.burgerMenu {
+  cursor: pointer;
 }
 
-input:valid {
-  border-color: green;
+.line {
+  width: 30px;
+  height: 3px;
+  margin: 6px 0;
+  background-color: #333;
+  border-radius: 5px;
 }
 
 /* HEADER STYLES */
-.active {
+#menu {
+  display: none;
+}
+.activeX {
   font-weight: bolder;
 }
 header {
@@ -251,7 +240,7 @@ header {
   justify-content: space-between;
   margin-left: 70px;
 }
-/* modal  */
+
 .modal {
   display: none;
   position: fixed;
@@ -268,35 +257,9 @@ header {
 }
 
 #modalContent {
-  /* position: relative; */
   margin: auto;
   padding-left: 10%;
   width: 80%;
-
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s;
-}
-@-webkit-keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-@keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
 }
 #modalContent > p {
   font-size: 16px;
