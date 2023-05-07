@@ -49,6 +49,7 @@ button {
   border: none;
   border-radius: 30px;
   cursor: pointer;
+  z-index: 3;
 }
 
 #scrollToTopBtn:hover {
@@ -79,6 +80,10 @@ header {
 /* End of header styles */
 
 /* SLIDER STYLES */
+.slidesContainer::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
 .sliderWrapper {
   position: relative;
   overflow: hidden;
@@ -92,10 +97,7 @@ header {
   margin: 0;
   padding: 0;
 }
-.slidesContainer::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-}
+
 .slideArrow {
   width: 33px;
   height: 33px;
@@ -518,7 +520,7 @@ header {
   font-size: 16px;
   color: #ffffff;
   font-weight: 500;
-  padding-left: 30px;
+  /* padding-left: 30px; */
 }
 .subscribeButton {
   border-radius: 25px;
@@ -530,6 +532,16 @@ header {
   color: #08aeea;
   margin-left: 22px;
 }
+input[type="email"] {
+  font-size: 16px;
+  color: #fff;
+  padding-left: 30px;
+  border: 2px solid #ccc;
+}
+#email:focus-visible {
+  outline: none;
+}
+
 /* end of the discount and email section  */
 
 /* travelers feedback section styles */
