@@ -25,12 +25,12 @@ function toggleVideo() {
 const myArray = [
   {
     name: "flight booking",
-    image: "./images/hotServices/flightBooking.png",
+    image: "../images/hotServices/flightBooking.png",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem.",
   },
   {
     name: "hotel & resort booking",
-    image: "./images/hotServices/resortBooking.png",
+    image: "../images/hotServices/resortBooking.png",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem.",
   },
   {
