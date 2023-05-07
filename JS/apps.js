@@ -112,3 +112,38 @@ navbarBurger.addEventListener("click", () => {
   navbarBurger.classList.toggle("activeNav");
   navbarMenu.classList.toggle("activeNav");
 });
+
+function animateValue(id, start, end, duration) {
+  var obj = document.getElementById(id);
+  var range = end - start;
+  var current = start;
+  var increment = end > start ? 1 : -1;
+  var stepTime = Math.abs(Math.floor(duration / range));
+  var timer = setInterval(function () {
+    current += increment;
+    obj.innerHTML = current;
+    if (current == end) {
+      clearInterval(timer);
+    }
+  }, stepTime);
+}
+
+var happyTravelers = document.getElementById("happy-travelers");
+var satisfiedTours = document.getElementById("satisfied-tours");
+var destination = document.getElementById("destination");
+var hotelsResorts = document.getElementById("hotels-resorts");
+
+animateValue("happy-travelers", 0, 120, 2000);
+animateValue("satisfied-tours", 0, 2594, 2000);
+animateValue("destination", 0, 854, 2000);
+animateValue("hotels-resorts", 0, 978, 2000);
+
+const form = document.querySelector("form");
+const emailInput = document.querySelector("#email");
+
+form.addEventListener("submit", (event) => {
+  if (!emailInput.checkValidity()) {
+    event.preventDefault();
+    alert("Please enter a valid email address.");
+  }
+});

@@ -4,10 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google meta tags -->
+    <meta name="description" content="Travel Company " />
+    <meta
+      name="keywords"
+      content="travel, discover, discovery, discount, tours, hot services, thailand, italy, indonesia, singapore "
+    />
+    <meta name="author" content="uniLab" />
+    <!-- facebook meta tags -->
+    <meta
+      property="og:url"
+      content="https://mariamkharaishvili.github.io/UNILABtourist/"
+    />
+    <meta property="og:type" content="Travel" />
+    <meta property="og:title" content="Travel Company " />
+    <meta property="og:description" content="Travel everywhere" />
+    <!--  -->
     <link rel="stylesheet" href="CSS/reset.css" />
     <link rel="stylesheet" href="CSS/font.css" />
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/media.css" />
+    <link rel="stylesheet" href="api.html" />
+
     <title>Tourist</title>
   </head>
   <body>
@@ -38,7 +56,7 @@
             <li><a href="#">about us</a></li>
             <li><a href="#">our services</a></li>
             <li><a href="#">tour package</a></li>
-            <li><a href="#">api</a></li>
+            <li><a href="api.html" target="blank">api</a></li>
           </ul>
         </nav>
       </div>
@@ -140,7 +158,7 @@
       <div class="feedbackNumbersWrapper container flex">
         <div>
           <img src="Images/feedbackNumber/starIcon.png" alt="star icon" />
-          <span>120.859</span>
+          <span id="happy-travelers">0</span>
           <p>happy travelers</p>
         </div>
         <div>
@@ -148,17 +166,17 @@
             src="Images/feedbackNumber/landmarkIcon.png"
             alt="landmark icon"
           />
-          <span>2594</span>
+          <span id="satisfied-tours">0</span>
           <p>satisfied tours</p>
         </div>
         <div>
           <img src="Images/feedbackNumber/globeIcon.png" alt="globe icon" />
-          <span>854</span>
+          <span id="destination">0</span>
           <p>destination</p>
         </div>
         <div>
           <img src="Images/feedbackNumber/towersIcon.png" alt="tower icon" />
-          <span>978</span>
+          <span id="hotels-resorts">0</span>
           <p>hotels $ resorts</p>
         </div>
       </div>
@@ -220,6 +238,7 @@
                 name="email"
                 required
                 placeholder="Enter your email"
+                pattern="[^\s@]+@[^\s@]+\.[^\s@]+"
               />
               <button class="subscribeButton" type="submit">subscribe</button>
             </form>

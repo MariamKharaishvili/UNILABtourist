@@ -1,0 +1,77 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google meta tags -->
+    <meta name="description" content="Travel Company " />
+    <meta
+      name="keywords"
+      content="travel, discover, discovery, discount, tours, hot services, thailand, italy, indonesia, singapore "
+    />
+    <meta name="author" content="uniLab" />
+    <!-- facebook meta tags -->
+    <meta
+      property="og:url"
+      content="https://mariamkharaishvili.github.io/UNILABtourist/"
+    />
+    <meta property="og:type" content="Travel" />
+    <meta property="og:title" content="Travel Company " />
+    <meta property="og:description" content="Travel everywhere" />
+    <!--  -->
+    <link rel="stylesheet" href="CSS/reset.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/api.css" />
+    <link rel="stylesheet" href="CSS/media.css" />
+    <link rel="stylesheet" href="CSS/font.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="container flex">
+      <div>
+        <img
+          src="Images/header&Slider/TourismLogo.svg"
+          alt="Tourism company logo"
+        />
+      </div>
+      <div>
+        <div class="navbar">
+          <div class="navbar-menu">
+            <a class="navbar-item" href="#">Home</a>
+            <a class="navbar-item" href="#">About</a>
+            <a class="navbar-item" href="#">Contact</a>
+          </div>
+          <div class="navbar-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <nav class="navBarFull">
+          <ul class="navbarTitles flex">
+            <li><a href="index.html" target="blank">home</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">tour package</a></li>
+            <li class="active"><a href="#">api</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div>
+      <h1>Locations List</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Country</th>
+            <th>City</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+          </tr>
+        </thead>
+        <tbody id="locationsTableBody"></tbody>
+      </table>
+    </div>
+    <script src="JS/api.js"></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+body {
+  font-family: "Raleway";
+}
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+table {
+  border-collapse: collapse;
+  margin: auto;
+  width: 80%;
+}
+th,
+td {
+  border: 1px solid black;
+  padding: 15px;
+  text-align: left;
+}
+th {
+  background: linear-gradient(-1deg, #08aeea 0%, #2af598 100%);
+  color: black;
+  padding: 20px;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

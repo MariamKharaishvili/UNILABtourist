@@ -44,6 +44,14 @@ button {
   display: none;
 }
 
+input:invalid {
+  border-color: red;
+}
+
+input:valid {
+  border-color: green;
+}
+
 /* HEADER STYLES */
 .active {
   font-weight: bolder;
